@@ -1,0 +1,31 @@
+{
+  "name": "ewd-dashboard",
+  "productName": "EWD Dashboard",
+  "version": "1.4.0",
+  "private": true,
+  "description": "Billing, ledger and stock dashboard backed by Google Sheets (Apps Script).",
+  "author": "Expert Webs Designs",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron": "npm run build && electron .",
+    "pack:win": "npm run build && node scripts/pack-win.mjs"
+  },
+  "dependencies": {
+    "jspdf": "^4.2.1",
+    "lucide-react": "^1.73.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "electron": "^45.3.3",
+    "vite": "^7.3.8"
+  }
+}
